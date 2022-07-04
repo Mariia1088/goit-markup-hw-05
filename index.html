@@ -68,7 +68,9 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-btn" type="button">Заказать услугу</button>
+          <button class="hero-btn" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -135,7 +137,12 @@
           <h2 class="activity-title">Чем мы занимаемся</h2>
           <ul class="activity-list">
             <li class="activity-item">
-              <img class="activity-img" src="./images/img.jpg" alt="Алгоритм" width="370" />
+              <img
+                class="activity-img"
+                src="./images/img.jpg"
+                alt="Алгоритм"
+                width="370"
+              />
               <p class="activity-text">Десктопные приложения</p>
             </li>
             <li class="activity-item">
@@ -503,87 +510,97 @@
     <footer class="footer">
       <div class="container footer-block">
         <div class="footer-container">
-        <div class="footer-logo">
-          <a href="./index.html" class="logo"
-            >Web<span class="logo-second">Studio</span></a
-          >
-        </div>
-        <address class="address">
-          <a
-            href="https://www.google.com/maps/place/бульвар+Лесі+Українки,+26,+Київ,+02000/@50.4268262,30.5376407,18.9z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
-            class="contact-link"
-            target="_blank"
-            rel="noopener nofollow noreferrer"
-            >г. Киев, пр-т Леси Украинки, 26</a
-          >
-        </address>
-        <ul class="footer-list">
-          <li class="footer-item">
-            <a class="footer-link" href="mailto:info@example.com"
-              >info@example.com</a
+          <div class="footer-logo">
+            <a href="./index.html" class="logo"
+              >Web<span class="logo-second">Studio</span></a
             >
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="tel:+380991111111"
-              >+38 099 111 11 11</a
+          </div>
+          <address class="address">
+            <a
+              href="https://www.google.com/maps/place/бульвар+Лесі+Українки,+26,+Київ,+02000/@50.4268262,30.5376407,18.9z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+              class="contact-link"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+              >г. Киев, пр-т Леси Украинки, 26</a
             >
-          </li>
-        </ul>
+          </address>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
         </div>
         <div class="social-links-footer">
           <h3 class="social-links-title">Присоединяйтесь</h3>
-         <ul class="social-links-list">
-                <li class="social-links-item">
-                  <a
-                    href="https://www.instagram.com"
-                    class="social-links item"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    <svg class="icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links-item">
-                  <a
-                    href="https://www.twitter.com"
-                    class="social-links item"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    <svg class="icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links-item">
-                  <a
-                    href="https://www.facebook.com"
-                    class="social-links item"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    <svg class="icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links-item">
-                  <a
-                    href="https://www.linkedin.com"
-                    class="social-links item"
-                    target="_blank"
-                    rel="noopener nofollow noreferrer"
-                  >
-                    <svg class="icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+          <ul class="social-links-list">
+            <li class="social-links-item">
+              <a
+                href="https://www.instagram.com"
+                class="social-links item"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+              >
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-item">
+              <a
+                href="https://www.twitter.com"
+                class="social-links item"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+              >
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-item">
+              <a
+                href="https://www.facebook.com"
+                class="social-links item"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+              >
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-item">
+              <a
+                href="https://www.linkedin.com"
+                class="social-links item"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+              >
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg width="30" height="30" class="close-icon">
+            <use href="./images/close.svg"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

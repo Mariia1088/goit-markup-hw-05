@@ -87,6 +87,9 @@ body {
   display: block;
   color: var(--title-color);
   position: relative;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current {
   color: var(--accent-color);
@@ -100,6 +103,9 @@ body {
   width: 100%;
   background-color: var(--accent-color);
   border-radius: 2px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover::after {
   position: absolute;
@@ -147,6 +153,9 @@ body {
   align-items: center;
   margin-right: 10px;
   fill: currentColor;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 *,
 ::before,
@@ -156,6 +165,9 @@ body {
 svg.icon-envelope {
   width: 16px;
   height: 12px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail,
 .header-tel {
@@ -166,6 +178,9 @@ svg.icon-envelope {
   padding: 32px 0;
   color: var(--text-color);
   align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -------------------------HERO-------------------- */
@@ -223,6 +238,9 @@ svg.icon-envelope {
   border-radius: 4px;
   margin: 0 auto;
   display: block;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ----------------------------ABOUT------------------- */
 .about {
@@ -281,6 +299,7 @@ svg.icon-envelope {
 }
 .activity-item {
   width: calc((100% - 60px) / 3);
+  position: relative;
 }
 .activity-title {
   font-size: 36px;
@@ -305,6 +324,8 @@ svg.icon-envelope {
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
+  left: 0;
+  bottom: 0;
 }
 
 /* ----------------------Team--------------------------*/
@@ -383,12 +404,18 @@ svg.icon-envelope {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .instagram-icon,
 .twitter-icon,
 .facebook-icon,
 .linkedin-icon {
   fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-links:hover,
 .social-links:focus {
@@ -443,9 +470,15 @@ svg.icon-envelope {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
+  transition-property: background-color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon {
   fill: currentColor;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -488,6 +521,9 @@ svg.icon-envelope {
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-bottom: var(--typical-margin);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link:hover,
 .footer-link:focus {
@@ -500,6 +536,9 @@ svg.icon-envelope {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: var(--typical-margin);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-links-footer {
   display: block;
@@ -552,6 +591,9 @@ svg.icon-envelope {
   border-radius: 4px;
   border: 0;
   box-shadow: none;
+  transition-property: background-color, color, box-shadow, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-current {
   color: #ffffff;
@@ -570,6 +612,9 @@ svg.icon-envelope {
   margin-bottom: 30px;
   margin-right: 30px;
   width: 370px;
+  transition-property: border, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-item:nth-of-type(3n) {
   margin-right: 0;
@@ -601,12 +646,18 @@ svg.icon-envelope {
   letter-spacing: 0.06em;
   color: var(--title-color);
   margin-bottom: 4px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-item:hover .project-top-text {
   transform: translateY(0);
@@ -630,5 +681,53 @@ svg.icon-envelope {
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ----------------------модальне вікно--------------------- */
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  transition: opacity 250ms, visibility 250ms;
+}
+.backdrop.is-hidden. modal {
+  transform: translate(-50, -50) scale(0);
+}
+.modal {
+  position: absolute;
+  width: 528px;
+  min-height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms;
+}
+.modal-close-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+}
+.close-icon {
+  fill: black;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
